@@ -87,3 +87,14 @@ from customers
 Select Top 3 *
 from customers c
 order by c.score Desc
+
+-- Query: Retrive the  lowest two customers based on the scores
+SELECT TOP 2 *
+from customers c
+order by c.score asc
+
+-- Query: Get the two most recent orders
+select top 2 *
+from orders o
+order by o.order_date desc
+
